@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 220vw;
+    height: 160vh;
+}
+header{
+    position: sticky;
+    top: 0;
+    filter: blur(0.6px);
+}
+nav {
+    height: 10rem;
+    border-bottom: 0.5rem solid rgb(24, 19, 19);
+}
+
+.Logo {
+    margin-left: -5rem;
+    width: 56px;
+}
+
+nav ul {
+    display: none;
+}
+
+article {
+    width: 200vw;
+    height: 120vh;
+    justify-content: start;
+}
+
+.article-content h1{
+    width: 200vw;
+    font-size: 6rem;
+    margin: 2rem;
+}
+
+.article-content p {
+    width: 200vw;
+    font-size: 2.8rem;
+    
+}
+
+.article-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.article-btn button a{
+    font-size: 20px;
+    padding: 1.5rem 3rem;
+}
+
+/* Hero-section */
+.hero {
+    bottom: 7rem;
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-size: cover;
+    height: 100vh;
+    width: 900px;
+    position: relative;
+    left: -1rem;
+    z-index: 5;
+}
+
+.hero video {
+    position: absolute;
+    object-fit: cover;
+    top: 11.7rem;
+    left: 9.9rem;
+    width: 178vw;
+    height: 55vh;
+    z-index: -1;
+
+}
+
+/* Section */
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+section img {
+    height: 220vh;
+    width: 220vw;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 1rem;
+    filter: brightness(70%);
+}
+
+section h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180vw;
+    position: absolute;
+    left: 5rem;
+    top: 45rem;
+    bottom: -40rem;
+    color: white;
+    font-size: 3.3rem;
+    margin-left: 5px;
+
+}
+
+section button {
+    background-color: white;
+}

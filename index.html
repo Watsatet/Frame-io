@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame.io | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:455px)" href="phone.css">
+    <script src="https://kit.fontawesome.com/3669d68531.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="Logo" preserveAspectRatio="xMinYMid meet"
+                    viewBox="0 0 30 34" title="Frame.io Logo">
+                    <path fill="#FCFCFC"
+                        d="M1.944 34C.556 34-.363 32.552.139 31.262A39.253 39.253 0 0 0 2.803 17c0-5.03-.944-9.839-2.664-14.262C-.363 1.448.556 0 1.944 0c.755 0 1.44.448 1.718 1.148A43.078 43.078 0 0 1 6.664 17a43.078 43.078 0 0 1-3.002 15.852A1.836 1.836 0 0 1 1.944 34M11.2 30.15c-1.27 0-2.186-1.215-1.899-2.45A47.16 47.16 0 0 0 10.524 17c0-3.68-.423-7.262-1.223-10.7-.287-1.235.629-2.45 1.9-2.45.865 0 1.625.578 1.824 1.418A51.002 51.002 0 0 1 14.385 17c0 4.038-.471 7.965-1.36 11.732a1.861 1.861 0 0 1-1.824 1.419M19.95 24.377c-1.164 0-2.058-1.022-1.949-2.176a55.362 55.362 0 0 0 0-10.402c-.109-1.154.785-2.176 1.948-2.176.97 0 1.79.719 1.883 1.68a59.265 59.265 0 0 1 0 11.394c-.093.962-.914 1.68-1.883 1.68M27.841 14.54l1.103 1.1a1.92 1.92 0 0 1 0 2.72l-1.103 1.1c-.81.809-2.197.236-2.197-.907v-3.107c0-1.142 1.386-1.715 2.197-.907">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="ul-1 center">
+                <ul>
+                    <li>Product</li>
+                    <li><a href="" class="hover" onmouseover="toggleHover()" onmouseout="togglehover()">Integrations</a>
+                    </li>
+                    <li><a href="">Enterprise</a></li>
+                    <li><a href="">Customers</a></li>
+                    <li><a href="">Camera to cloud</a></li>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">What's New</a></li>
+                </ul>
+            </div>
+            <div class="ul-2">
+                <ul>
+                    <li><a href="">Sign in</a></li>
+                    <li><Button><a href="">Start&nbsp;Free&nbsp;Trial</a></Button></li>
+                    <li> <svg xmlns="http://www.w3.org/2000/svg" style="background-color: black;filter: brightness(160%);" aria-label="Adobe"
+                            viewBox="0 0 512 512" width="36" height="36">
+                            <rect width="512" height="512" fill="#0b1012" rx="15%" class="colored2224 svgShape"></rect>
+                            <path fill="#ffffff"
+                                d="M296 120l114 272V120H296m-194 0v272l114-272H102m105 217h52l23 55h46l-73-173-48 118"
+                                class="colorfff svgShape"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="imp-hover">
+            <nav>
+                <ul>
+                    <li><a href="">All Integrations</a></li>
+                    <li><a href="">Creative Cloud</a></li>
+                    <li><a href="">Final Cut Pro</a></li>
+                    <li><a href="">Media Composer</a></li>
+                    <li><a href="">DaVinci Resolve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="article-content center">
+            <div>
+                <h1>Next generation creative collaboration.</h1>
+            </div>
+            <div class="article-para">
+                <p>Frame.io is one central hub that lets you share media, track feedback, and </p>
+                <p>your workflow so your team can work closely together from anywhere in the world.</p>
+            </div>
+            <div class="article-btn">
+                <Button><a href="">Start&nbsp;Free&nbsp;Trial</a></Button>
+            </div>
+        </div>
+    </article>
+    <div class="hero center">
+        <div class="hero-img">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                loop autoplay></video>
+        </div>
+    </div>
+    <section>
+        <div>
+            <img src="https://cdn.sanity.io/images/s6lu43cv/production-v2/549c5cdd3724770b21e43b20f135de110d18ee41-3600x2001.png?rect=0,401,3600,1200&w=1500&h=500&q=70&auto=format&dpr=1.5"
+                alt="">
+            <div class="article-para">
+                <h1>
+                    <p>For years, creative teams have used a patchwork of </p>
+                    <p>tools for collaboration, work in progress reviews, file </p>
+                    <p>transfers, and approvals. Frame.io brings everything</p>
+                    <p>— and everyone — together in one place.</p>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <script>
+        const btn = document.getElementsByClassName('hover');
+        const toggleHover = () => {
+            const nav = document.getElementsByClassName('imp-hover')[0];
+            if (nav.style.display != 'block') {
+                // Show the nav
+                nav.style.display = 'block';
+            } else {
+                // Hide the nav
+                nav.style.display = 'none';
+            }
+        };
+        const togglehover = () => {
+            const nav = document.getElementsByClassName('imp-hover')[0];
+            if (nav.style.display != 'block') {
+                // Show the nav
+                nav.style.display = 'block';
+            } else {
+                // Hide the nav
+                nav.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+
+</html>

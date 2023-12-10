@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.411);
+    filter: blur(0.4px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: 2px solid rgb(24, 19, 19);
+}
+.Logo{
+    margin-left:-0.5rem;
+    width:2rem;
+    margin-right: 9rem;
+}
+.imp-hover{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #c1c2d9;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+nav ul li button {
+    color: #ffffff;
+    background-color: rgb(52, 52, 125);
+    border: 1px solid blue;
+    border-radius: 2rem;
+    font-weight: 900;
+    padding: 0.8rem 1rem;
+}
+
+.ul-1 {
+    position: relative;
+    left: 10px;
+}
+
+/* Article */
+article {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60vw;
+    margin-left: 10px;
+}
+
+.article-content h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.article-content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    color: #9798b0;
+    font-size: 1.3rem;
+}
+
+.article-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.article-btn {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem 0 0 2rem;
+}
+
+.article-btn button {
+    color: black;
+    background-color: #c1c2d9;
+    border: 1px solid blue;
+    border-radius: 2rem;
+}
+.article-btn button a{
+    text-decoration: none;
+    color: black;
+    background-color: #c1c2d9;
+    padding: 1.3rem 2.3rem;
+    border-radius: 2rem;
+}
+
+/* Hero-section */
+.hero {
+    position: relative;
+    bottom: 7rem;
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-size: cover;
+    height: 90vh;
+    width: 900px;
+    position: relative;
+}
+
+.hero video {
+    position: absolute;
+    top: 8.7rem;
+    left: 7.4rem;
+    width: 655px;
+    z-index: -1;
+
+}
+
+/* Section */
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+section img {
+    height: 100vh;
+    width: 99vw;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 1rem;
+    filter: brightness(40%);
+}
+
+section h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    position: absolute;
+    left: 5rem;
+    top: 15rem;
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 20px;
+
+}
+
+section button {
+    background-color: white;
+}
+
+/* utilities */
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
